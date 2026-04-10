@@ -17,13 +17,13 @@
 
 }
 body{
-    background-color: var(--gris-tres-clair);
+    background-color: var(white);
     font-family: roboto, sans-serif;
     line-height: 1.6;
     }
 header{
     background-color: white;
-    box-shadow: 2px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 6px 10px rgba(0,0 ,0 , 0.2);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -37,7 +37,7 @@ header div a {
     text-decoration: none;
     font-size: 2.2rem;
     font-weight: bold;
-    color: var(--Violet-doux);
+    color: var(white);
 }
 ul li {
     list-style: none;
@@ -76,7 +76,7 @@ ul li a:hover::after {
 }
 
 a.active{
-    color: var(--Violet-doux);
+    color: var(--gris-tres-fonce);
 }
 a.active::after{
     width: 100%;
@@ -224,3 +224,346 @@ footer a:hover {
     color:#FFA726;
     transform: translateY(-3px);
 }
+/* Styles pour la page Contact */
+.contact-container {
+    max-width: 800px;
+    margin: 5rem auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.direct-contact {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.direct-contact a {
+    color: var(--Violet-doux);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-apps {
+    margin-top: 10px;
+}
+
+.social-apps a {
+    margin: 0 10px;
+    padding: 5px 15px;
+    border: 1px solid var(--Violet-doux);
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.social-apps a:hover {
+    background-color: var(--Violet-doux);
+    color: white;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--gris-tres-fort);
+}
+
+.form-group input {
+    padding: 12px;
+    border: 1px solid var(--gris-clair);
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: var(--Violet-doux);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: var(--Violet-fonce);
+}
+/* Styles pour la page Divertissement */
+.entertainment-container {
+    max-width: 1000px;
+    margin: 5rem auto;
+    padding: 2rem;
+}
+
+.intro-entertainment {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.video-gallery {
+    margin-bottom: 5rem;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.video-card {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.video-card iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+}
+
+.video-card p {
+    margin-top: 10px;
+    font-weight: 600;
+    color: var(--gris-fonce);
+    text-align: center;
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+.hobby-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    border-bottom: 4px solid var(--Violet-doux);
+}
+
+.hobby-item:hover {
+    transform: translateY(-10px);
+}
+
+.hobby-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hobby-item h3 {
+    color: var(--Violet-fonce);
+    margin-bottom: 0.5rem;
+}
+
+.hobby-item p {
+    color: var(--gris-fonce);
+    font-size: 0.9rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background: #2c3e50;
+  color: #fff;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a:hover, .active {
+  color: #3498db;
+}
+
+main {
+  padding: 2rem 5%;
+}
+
+.grille-projets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.grille-projets div:first-child {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+article {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+}
+
+article:hover {
+  transform: translateY(-5px);
+}
+
+figure img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+article h3 {
+  padding: 1rem 1rem 0.5rem;
+}
+
+article p {
+  padding: 0 1rem;
+  font-size: 0.9rem;
+  flex-grow: 1;
+}
+
+.tags {
+  padding: 1rem;
+}
+
+.tags span {
+  background: #e0e0e0;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  margin-right: 5px;
+}
+
+.liens-projet {
+  padding: 0 1rem;
+  display: flex;
+  gap: 15px;
+}
+
+.liens-projet a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+footer img {
+  margin: 10px 5px;
+  filter: invert(1);
+}
+
+.passions-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.grille-passions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.carte-passion {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 300px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.carte-passion img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.carte-passion:hover img {
+  transform: scale(1.1);
+}
+
+.passion-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: white;
+}
+
+.passion-info h3 {
+  margin-bottom: 5px;
+  font-size: 1.4rem;
+}
+
+.passion-info p {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+
